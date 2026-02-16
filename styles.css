@@ -1,19 +1,12 @@
-
-.display-block{
-   display: block;
-   height: 200px;
-   background-color: blue;
-   border: 1px solid #000;
+body {
+   padding: 20%;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
-.display-inLine{
-   display: inline;
-   background-color: green;
-   border: 1px solid #000;
+.imagem-flutuante {
+   float: left;
 }
 
-.display-inLine-block{
-   display: inline-block;
-   background-color: red;
-   border: 1px solid #000;
+.subtitulo {
+   clear: both;
 }

@@ -3,8 +3,6 @@ body{
    background: #4b004b;
    display: flex;
    justify-content: center;
-   align-items: center;
-   height: 100hv;
 }
 
 .container {
@@ -32,9 +30,9 @@ body{
 
 }
 
-.hearder{ grid-area: header;}
+.header{ grid-area: header;}
 .menu{ grid-area: menu;}
 .left{ grid-area: left;}
 .content{grid-area: content;}
 .right{grid-area: right;}
-.footer{grid-area:footer;}
+.footer{grid-area: footer;}

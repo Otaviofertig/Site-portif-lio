@@ -2,7 +2,10 @@
    background-color: blue;
    font-family: Arial, Helvetica, sans-serif;
    padding: 10px;
-   display: flex;  
+   display: flex; 
+   flex-direction: row-reverse; 
+   align-items: center;
+   
 }
 
 .box{
@@ -10,6 +13,7 @@
    height: 50px;
    border: 3px solid #0000;
    border-radius: 3px;
+   ;
 }
 
 #box1 {

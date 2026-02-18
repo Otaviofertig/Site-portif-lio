@@ -9,3 +9,27 @@ header {
    padding: 20px;
    text-align: center;
 } 
+
+main {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, mimax(300px, 1fr));
+   gap: 20px;
+   padding: 20px;
+
+}
+
+.content{
+   background-color: #e4e3e3;
+   padding: 20px;
+   border-radius: 3px;
+}
+
+footer {
+   background-color: #8f8e8e;
+   color: black;
+   text-align: center;
+   padding: 10px;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+}

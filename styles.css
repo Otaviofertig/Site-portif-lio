@@ -1,6 +1,7 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+   background-color: #0f172a;
 }
 
 /* HEADER */
@@ -13,7 +14,28 @@ header {
     align-items: center;
     color: white;
 }
+
+.navbar {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   padding: 15px;
+   background: #111827;
+}
+
+.navbar a {
+   color: white;
+   text-decoration: none;
+   font-weight: 500;
+   transition: 0.3s;
+}
+
+.navbar a:hover {
+   color: #38bdf8;
+}
+
 main {
+   background: linear-gradient(to bottom, #f5f5f5, #e9e9e9);
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
    gap: 20px;
@@ -21,11 +43,90 @@ main {
 
 }
 
-.content{
-   background-color: #e4e3e3;
-   padding: 20px;
-   border-radius: 3px;
+.sobre {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+   padding: 60px 20px;
+   background: white;
+   flex-wrap: wrap;
 }
+
+.foto img {
+   width: 250px;
+   border-radius: 20px;
+   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.sobre-texto {
+   max-width: 500px;
+}
+
+.content {
+   background: rgba(255,255,255,0.9);
+   padding: 25px;
+   border-radius: 12px;
+   backdrop-filter: blur(5px);
+   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+   transform: translateY(-8px);
+   box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.habilidades {
+   padding: 60px 20px;
+   text-align: center;
+   background: #f3f4f6;
+}
+
+.skills-grid {
+   margin-top: 40px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   gap: 20px;
+}
+
+.skill-card {
+   background: white;
+   padding: 20px;
+   border-radius: 12px;
+   font-weight: 600;
+   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+   transition: 0.3s;
+}
+
+.skill-card:hover {
+   transform: translateY(-6px);
+   background: #0ea5e9;
+   color: white;
+}
+
+.contato {
+   padding: 60px 20px;
+   text-align: center;
+   background: white;
+}
+
+.btn-linkedin {
+   display: inline-block;
+   margin-top: 20px;
+   padding: 12px 25px;
+   background: #0A66C2;
+   color: white;
+   text-decoration: none;
+   border-radius: 8px;
+   font-weight: 600;
+   transition: 0.3s;
+}
+
+.btn-linkedin:hover {
+   background: #004182;
+}
+
 
 .bg-video {
     position: absolute;
@@ -50,4 +151,14 @@ footer::after {
 .footer-content {
     position: relative;
     z-index: 1;
+}
+
+footer {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }

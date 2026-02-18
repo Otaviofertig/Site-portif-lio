@@ -9,7 +9,7 @@
 <body>
     <header>
         <video autoplay muted loop playsinline class="bg-video">
-            <source src="C:\Users\teofilolglbo\OneDrive\Área de Trabalho\Documentos\SCTEC\Site-portif-lio\12716-241674181_small.mp4" type="video/mp4">
+            <source src="video-header.mp4" type="video/mp4">
         </video>
 
         <div class="header-content">
@@ -17,40 +17,98 @@
         </div>
     </header>
 
+    <nav class="navbar">
+    <a href="#sobre">Sobre</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contato">Contato</a>
+</nav>
 
-    <main>
-        <section class="content">
+<main>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="sobre">
+        <div class="foto">
+            <img src="sua-foto.jpg" alt="Foto de Otávio">
+        </div>
+
+        <div class="sobre-texto">
             <h2>Sobre mim</h2>
-            <p>Olá sou Otávio tenho 19 anos e atualmente curso Análise e Desenvolvimento d Sistemas no UniSenai, atrás de uma primeira experiencia de emprego faço desse site meu portifólio. Se caso se interesse trabalho com linguegens de fornt end assim como java também tenho experiência com MySQL e bootstrap, confio muito em mim e na equipe que estiver para aprimorar cada vez mais meu curriculo e minhas habilidades.</p>
-        </section>
+            <p>
+                Olá sou Otávio tenho 19 anos e atualmente curso Análise e Desenvolvimento de Sistemas no UniSenai...
+            </p>
+        </div>
+    </section>
 
-        <section class="content">
-            <h2>Minhas Habilidades</h2>
-            <ul>
-                <li>
-                    Boa comunicação
-                </li>
-                <li>
-                    Produtividade
-                </li>
-                <li>
-                    Trabalho em equipe
-                </li>
-            </ul>
-        </section>
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="habilidades">
+        <h2>Minhas Habilidades</h2>
 
-        <section class="content">
-            <h2>Contatos</h2>
-            <p>Caso tenha gerado interesse esses são meus contatos: </p>
-            <p><strong>Email:</strong> otavio.lesss@gmail.com</p>
-            <p><strong>Telefone:</strong> (47) 99707-7324</p>
-            <p><strong>Instagram:</strong> @otaviofertig</p>
-            <a href="https://www.linkedin.com/in/ot%C3%A1vio-fertig-677b25331/" target="blank"> Meu Linkedin</a>
-        </section>
-    </main>
+        <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">Bootstrap</div>
+            <div class="skill-card">Trabalho em Equipe</div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy Todos os direitos reservados</p>
-    </footer>
-</body>
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+
+        <p><strong>Email:</strong> otavio.lesss@gmail.com</p>
+        <p><strong>Telefone:</strong> (47) 99707-7324</p>
+        <p><strong>Instagram:</strong> @otaviofertig</p>
+
+        <a href="https://www.linkedin.com/in/ot%C3%A1vio-fertig-677b25331/" 
+           target="_blank" 
+           class="btn-linkedin">
+           Acessar LinkedIn
+        </a>
+    </section>
+
+</main>
+
+<!--         <main>
+            <section class="content">
+                <h2>Sobre mim</h2>
+                <p>Olá sou Otávio tenho 19 anos e atualmente curso Análise e Desenvolvimento d Sistemas no UniSenai, atrás de uma primeira experiencia de emprego faço desse site meu portifólio. Se caso se interesse trabalho com linguegens de fornt end assim como java também tenho experiência com MySQL e bootstrap, confio muito em mim e na equipe que estiver para aprimorar cada vez mais meu curriculo e minhas habilidades.</p>
+            </section>
+
+            <section class="content">
+                <h2>Minhas Habilidades</h2>
+                <ul>
+                    <li>
+                        Boa comunicação
+                    </li>
+                    <li>
+                        Produtividade
+                    </li>
+                    <li>
+                        Trabalho em equipe
+                    </li>
+                </ul>
+            </section>
+
+            <section class="content">
+                <h2>Contatos</h2>
+                <p>Caso tenha gerado interesse esses são meus contatos: </p>
+                <p><strong>Email:</strong> otavio.lesss@gmail.com</p>
+                <p><strong>Telefone:</strong> (47) 99707-7324</p>
+                <p><strong>Instagram:</strong> @otaviofertig</p>
+                <a href="https://www.linkedin.com/in/ot%C3%A1vio-fertig-677b25331/" target="blank"> Meu Linkedin</a>
+            </section>
+        </main>
+ -->
+        <footer>
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="video-footer.mp4" type="video/mp4">
+            </video>
+
+            <div class="footer-content">
+                <p>&copy Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </body>
 </html>

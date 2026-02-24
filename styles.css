@@ -53,29 +53,61 @@ footer::after {
 /* =========================
    NAVBAR
 ========================= */
+/* =========================
+   NAVBAR MODERNA
+========================= */
 
 .navbar {
-   display: flex;
-   justify-content: center;
-   gap: 40px;
-   padding: 20px;
-   background: #111827;
    position: sticky;
    top: 0;
-   z-index: 100;
+   z-index: 1000;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 40px;
+
+   padding: 18px 30px;
+
+   background: rgba(15, 23, 42, 0.85); /* fundo translúcido */
+   backdrop-filter: blur(10px); /* efeito vidro */
+   -webkit-backdrop-filter: blur(10px);
+
+   border-bottom: 1px solid rgba(255,255,255,0.08);
+   transition: 0.3s ease;
 }
 
+/* LINKS */
 .navbar a {
+   position: relative;
    color: #f8fafc;
    text-decoration: none;
    font-weight: 500;
-   transition: 0.3s;
+   font-size: 15px;
+   letter-spacing: 0.5px;
+   transition: 0.3s ease;
 }
 
+/* HOVER COR */
 .navbar a:hover {
    color: #3b82f6;
 }
 
+/* LINHA ANIMADA */
+.navbar a::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   width: 0%;
+   height: 2px;
+   background: #3b82f6;
+   transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+   width: 100%;
+}
 /* =========================
    MAIN CONTAINER
 ========================= */
@@ -179,22 +211,63 @@ section h2 {
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-/* Frente do card */
-.card-front {
-    background: linear-gradient(135deg, #2563eb, #3b82f6);
-    color: white;
+.icon {
+    font-size: 50px;
+    margin-bottom: 15px;
 }
 
-.card-front .icon {
+.soft-icon {
     font-size: 40px;
     margin-bottom: 15px;
 }
 
-/* Verso do card */
+/* VERSO */
 .card-back {
     background: white;
     color: #1e293b;
     transform: rotateY(180deg);
+}
+
+/* CORES PERSONALIZADAS */
+
+.card-front {
+    background: #1e293b; /* azul escuro neutro */
+    color: white;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+/* Glow por tecnologia */
+
+.html .card-front {
+    border-color: #e34f26;
+}
+
+.css .card-front {
+    border-color: #264de4;
+}
+
+.js .card-front {
+    border-color: #f7df1e;
+}
+
+.java .card-front {
+    border-color: #e76f00;
+}
+
+.mysql .card-front {
+    border-color: #00758f;
+}
+
+.soft .card-front {
+    border-color: #7c3aed;
+}
+
+/* Efeito hover mais elegante */
+
+.card:hover .card-front {
+    box-shadow: 0 0 20px rgba(255,255,255,0.15);
+    transform: scale(1.05);
 }
 /* =========================
    PROJETOS
@@ -233,28 +306,74 @@ section h2 {
 /* =========================
    CONTATO
 ========================= */
-
 .contato {
-   background: #ffffff;
-   text-align: center;
+    padding: 100px 20px;
+    text-align: center;
 }
 
-.btn-linkedin {
-   display: inline-block;
-   margin-top: 20px;
-   padding: 12px 25px;
-   background: #0A66C2;
-   color: white;
-   text-decoration: none;
-   border-radius: 8px;
-   font-weight: 600;
-   transition: 0.3s;
+.contato h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: white;
 }
 
-.btn-linkedin:hover {
-   background: #004182;
+.contato-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
+.contato-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    padding: 30px 40px;
+    width: 160px;
+
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(8px);
+
+    border-radius: 16px;
+    text-decoration: none;
+    color: white;
+
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contato-card i {
+    font-size: 32px;
+}
+
+.contato-card span {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* HOVER GERAL */
+.contato-card:hover {
+    transform: translateY(-8px);
+}
+
+/* CORES INDIVIDUAIS */
+
+.linkedin:hover {
+    border-color: #0a66c2;
+    box-shadow: 0 0 20px rgba(10,102,194,0.4);
+}
+
+.email:hover {
+    border-color: #ef4444;
+    box-shadow: 0 0 20px rgba(239,68,68,0.4);
+}
+
+.github:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
 /* =========================
    FOOTER
 ========================= */

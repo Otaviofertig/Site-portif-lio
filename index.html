@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Otávio Fertig</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -21,7 +23,6 @@
     <a href="#sobre">Sobre</a>
     <a href="#habilidades">Habilidades</a>
     <a href="#projetos">Projetos</a>
-    <button id="theme-toggle">🌙</button>
     <a href="#contato">Contato</a>
 </nav>
 
@@ -36,7 +37,7 @@
         <div class="sobre-texto">
             <h2>Sobre mim</h2>
             <p>
-                Olá sou Otávio tenho 19 anos e atualmente curso Análise e Desenvolvimento de Sistemas no UniSenai...
+                Olá sou Otávio tenho 19 anos e atualmente curso Análise e Desenvolvimento d Sistemas no UniSenai, atrás de uma primeira experiencia de emprego faço desse site meu portifólio. Se caso se interesse trabalho com linguegens de fornt end assim como java também tenho experiência com MySQL e bootstrap, confio muito em mim e na equipe que estiver para aprimorar cada vez mais meu curriculo e minhas habilidades.
             </p>
         </div>
     </section>
@@ -47,62 +48,80 @@
 
     <div class="cards-container">
 
-        <div class="card">
+        <!-- HTML -->
+        <div class="card html">
             <div class="card-inner">
                 <div class="card-front">
-                    <div class="icon">🌐</div>
+                    <i class="devicon-html5-plain colored icon"></i>
                     <h3>HTML</h3>
                 </div>
                 <div class="card-back">
-                    <p>Estruturação semântica de páginas modernas e organizadas.</p>
+                    <p>Estruturação semântica e acessível de páginas modernas.</p>
                 </div>
             </div>
         </div>
 
-        <div class="card">
+        <!-- CSS -->
+        <div class="card css">
             <div class="card-inner">
                 <div class="card-front">
-                    <div class="icon">🎨</div>
+                    <i class="devicon-css3-plain colored icon"></i>
                     <h3>CSS</h3>
                 </div>
                 <div class="card-back">
-                    <p>Criação de layouts responsivos com Flexbox, Grid e animações.</p>
+                    <p>Layouts responsivos com Flexbox, Grid e animações.</p>
                 </div>
             </div>
         </div>
 
-        <div class="card">
+        <!-- JavaScript -->
+        <div class="card js">
             <div class="card-inner">
                 <div class="card-front">
-                    <div class="icon">☕</div>
+                    <i class="devicon-javascript-plain colored icon"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="card-back">
+                    <p>Interatividade e manipulação dinâmica do DOM.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Java -->
+        <div class="card java">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="devicon-java-plain colored icon"></i>
                     <h3>Java</h3>
                 </div>
                 <div class="card-back">
-                    <p>Desenvolvimento de lógica backend e sistemas orientados a objetos.</p>
+                    <p>Desenvolvimento backend orientado a objetos.</p>
                 </div>
             </div>
         </div>
 
-        <div class="card">
+        <!-- MySQL -->
+        <div class="card mysql">
             <div class="card-inner">
                 <div class="card-front">
-                    <div class="icon">🗄️</div>
+                    <i class="devicon-mysql-plain colored icon"></i>
                     <h3>MySQL</h3>
                 </div>
                 <div class="card-back">
-                    <p>Modelagem e manipulação de banco de dados relacionais.</p>
+                    <p>Modelagem e manipulação de banco de dados.</p>
                 </div>
             </div>
         </div>
 
-        <div class="card">
+        <!-- Soft Skill -->
+        <div class="card soft">
             <div class="card-inner">
                 <div class="card-front">
-                    <div class="icon">🤝</div>
+                    <div class="soft-icon">🤝</div>
                     <h3>Trabalho em Equipe</h3>
                 </div>
                 <div class="card-back">
-                    <p>Colaboração eficiente em projetos e comunicação clara.</p>
+                    <p>Comunicação clara e colaboração eficiente.</p>
                 </div>
             </div>
         </div>
@@ -129,20 +148,28 @@
     </section>
 
     <!-- CONTATO -->
-    <section id="contato" class="contato">
-        <h2>Contato</h2>
+     <section id="contato" class="contato">
+    <h2>Contato</h2>
 
-        <p><strong>Email:</strong> otavio.lesss@gmail.com</p>
-        <p><strong>Telefone:</strong> (47) 99707-7324</p>
-        <p><strong>Instagram:</strong> @otaviofertig</p>
+    <div class="contato-container">
 
-        <a href="https://www.linkedin.com/in/ot%C3%A1vio-fertig-677b25331/" 
-           target="_blank" 
-           class="btn-linkedin">
-           Acessar LinkedIn
+        <a href="https://www.linkedin.com/in/ot%C3%A1vio-fertig-677b25331/" target="_blank" class="contato-card linkedin">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
         </a>
-    </section>
 
+        <a href="otavio.lesss@gmail.com" class="contato-card email">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+        </a>
+
+        <a href="https://github.com/Otaviofertig" target="_blank" class="contato-card github">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+
+    </div>
+</section>
 </main>
 
 <!--         <main>

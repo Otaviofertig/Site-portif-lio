@@ -69,11 +69,14 @@ footer::after {
    position: sticky;
    top: 0;
    z-index: 1000;
+
    display: flex;
    justify-content: center;
-   gap: 40px;
-   padding: 18px 30px;
-   background: rgba(15, 23, 42, 0.9);
+   gap: 60px; /* mais espaçamento */
+
+   padding: 25px 30px; /* navbar mais alta */
+
+   background: rgba(15, 23, 42, 0.95);
    backdrop-filter: blur(10px);
    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
@@ -82,8 +85,11 @@ footer::after {
    position: relative;
    color: var(--text-primary);
    text-decoration: none;
-   font-weight: 500;
-   font-size: 15px;
+
+   font-size: 18px; /* fonte maior */
+   font-weight: 600; /* mais destaque */
+   letter-spacing: 1px;
+
    transition: 0.3s;
 }
 

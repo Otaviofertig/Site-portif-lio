@@ -221,31 +221,67 @@ section h2 {
 /* =========================
    PROJETOS
 ========================= */
+/* =========================
+   ESTILOS DA CALCULADORA
+========================= */
 
-.projeto-card {
+.calc-box {
+    background: var(--bg-secondary);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 1px solid var(--accent);
+}
+
+#calc-display {
+    width: 100%;
+    height: 50px;
     background: var(--bg-primary);
-    padding: 25px;
-    margin: 20px auto;
-    max-width: 600px;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.08);
-    transition: 0.3s;
+    border: none;
+    border-radius: 5px;
+    color: var(--text-primary);
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    outline: none;
 }
 
-.projeto-card:hover {
-    transform: translateY(-6px);
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
 }
 
-.projeto-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: var(--accent);
-    font-weight: 600;
-    text-decoration: none;
+.calc-buttons button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: var(--bg-card);
+    color: var(--text-primary);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.projeto-card a:hover {
-    color: #60a5fa;
+.calc-buttons button:hover {
+    background: var(--accent);
+}
+
+.btn-op, .btn-equal {
+    background: var(--accent) !important;
+}
+
+.btn-clear {
+    background: var(--accent) !important; /* Vermelho para limpar */
+}
+
+.btn-zero {
+    grid-column: span 2;
+}
+
+.btn-equal {
+    grid-row: span 2;
 }
 
 /* =========================

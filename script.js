@@ -20,3 +20,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+/* =========================
+   LÓGICA DA CALCULADORA
+========================= */
+
+const display = document.getElementById('calc-display');
+
+function appendToDisplay(input) {
+    display.value += input;
+}
+
+function clearDisplay() {
+    display.value = "";
+}
+
+function deleteLast() {
+    display.value = display.value.slice(0, -1);
+}
+
+function calculate() {
+    try {
+        // eval() resolve a string matemática; em projetos reais maiores, 
+        // recomenda-se uma biblioteca de parsing por segurança.
+        display.value = eval(display.value);
+    } catch (error) {
+        display.value = "Erro";
+        setTimeout(clearDisplay, 1500);
+    }
+}

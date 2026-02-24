@@ -154,25 +154,45 @@
 
         <!-- ================= PROJETOS ================= -->
         <!-- Seção para apresentar projetos desenvolvidos e tecnologias utilizadas -->
-        <section id="projetos" class="projetos">
+       <section id="projetos" class="projetos">
+    <h2>Meus Projetos</h2>
 
-            <h2>Meus Projetos</h2>
+    <div class="projeto-card">
+        <h3>Calculadora Web</h3>
+        <p>Projeto funcional integrado utilizando lógica de manipulação do DOM.</p>
+        
+        <div class="calc-box">
+            <input type="text" id="calc-display" readonly placeholder="0">
+            <div class="calc-buttons">
+                <button onclick="clearDisplay()" class="btn-clear">Clear</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('*')">×</button>
+                <button onclick="deleteLast()">⌫</button>
 
-            <div class="projeto-card">
-                <h3>Calculadora Web</h3>
-                <p>Projeto desenvolvido utilizando HTML, CSS e JavaScript.</p>
-                <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">Ver demonstração</a>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')" class="btn-op">-</button>
+
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('+')" class="btn-op">+</button>
+
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="calculate()" class="btn-equal">=</button>
+
+                <button onclick="appendToDisplay('0')" class="btn-zero">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
             </div>
+        </div>
 
-            <div class="projeto-card">
-                <h3>Sistema de Cadastro</h3>
-                <p>Aplicação utilizando Java e MySQL.</p>
-                <p><strong>Tecnologias:</strong> Java, MySQL</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">Ver demonstração</a>
-            </div>
+        <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+    </div>
 
-        </section>
+    </section>
 
 
         <!-- ================= CONTATO ================= -->

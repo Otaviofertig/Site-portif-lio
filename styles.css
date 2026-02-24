@@ -127,6 +127,37 @@ main {
    background: #004182;
 }
 
+/* PROJETOS */
+.projetos {
+    padding: 60px 20px;
+    background: #e5e7eb;
+    text-align: center;
+}
+
+.projeto-card {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+}
+
+/* DARK MODE */
+.dark-mode {
+    background: #0f172a;
+    color: white;
+}
+
+.dark-mode main {
+    background: #1e293b;
+}
+
 
 .bg-video {
     position: absolute;

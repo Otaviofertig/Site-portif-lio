@@ -1,22 +1,22 @@
-// SCROLL SUAVE
+/* =========================
+   SCROLL SUAVE ENTRE SEÇÕES
+========================= */
+
+// Seleciona todos os links que começam com "#"
+// (ou seja, links internos da página)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    // Adiciona evento de clique para cada link
     anchor.addEventListener("click", function(e) {
+
+        // Impede o comportamento padrão do navegador
+        // (que faria o salto seco até a seção)
         e.preventDefault();
+
+        // Pega o valor do href (ex: #sobre)
+        // e faz a rolagem suave até a seção correspondente
         document.querySelector(this.getAttribute("href")).scrollIntoView({
             behavior: "smooth"
         });
     });
-});
-
-// DARK MODE
-const toggleBtn = document.getElementById("theme-toggle");
-
-toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    if(document.body.classList.contains("dark-mode")) {
-        toggleBtn.textContent = "☀️";
-    } else {
-        toggleBtn.textContent = "🌙";
-    }
 });

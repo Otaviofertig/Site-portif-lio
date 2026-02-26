@@ -167,6 +167,14 @@ section h2 {
    HABILIDADES
 ========================= */
 
+.habilidades p {
+    text-align: center;
+}
+
+.habilidades h3 {
+    text-align: center;
+}
+
 .cards-container {
     margin-top: 40px;
     display: flex;
@@ -222,24 +230,30 @@ section h2 {
     margin-bottom: 15px;
 }
 
-/* Estilo para ícones das Soft Skills (caso não esteja usando Devicon neles) */
+.icon, [class^="devicon-"] {
+    color: #2196F3 !important; 
+    font-style: normal;
+}
+
+/* Garante que o fundo e o estilo sejam idênticos aos outros cards */
+.card.github .card-front, 
+.card.soft-skill .card-front {
+    /* O navegador vai herdar o background que você já definiu para a classe .card-front */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste de tamanho para os ícones novos (Lâmpada e Tarefas) */
 .card-front .fas {
-    font-size: 50px; /* Ajuste conforme o tamanho dos seus outros ícones */
+    font-size: 4rem; /* Ajuste para bater com o tamanho dos ícones Devicon */
     margin-bottom: 15px;
 }
 
-/* Estilização rápida do verso do card do GitHub */
-.github-card .card-back {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Se você quiser que o card do GitHub tenha uma cor diferente na frente */
-.github-card .card-front {
-    background-color: #24292e !important;
+/* Opcional: Se quiser que o ícone do GitHub fique preto como a logo original */
+.devicon-github-original.colored {
+    color: #24292e;
 }
 /* =========================
    PROJETOS

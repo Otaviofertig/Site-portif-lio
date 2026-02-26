@@ -221,6 +221,26 @@ section h2 {
 /* =========================
    PROJETOS
 ========================= */
+
+.projects-grid {
+    display: grid;
+    /* Usa o repeat(auto-fit) que você anotou nos estudos para ser responsivo */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 15px; /* Box Model: Padding */
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Efeito visual moderno */
+}
+
 /* =========================
    ESTILOS DA CALCULADORA
 ========================= */

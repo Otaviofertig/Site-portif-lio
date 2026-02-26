@@ -222,6 +222,25 @@ section h2 {
     margin-bottom: 15px;
 }
 
+/* Estilo para ícones das Soft Skills (caso não esteja usando Devicon neles) */
+.card-front .fas {
+    font-size: 50px; /* Ajuste conforme o tamanho dos seus outros ícones */
+    margin-bottom: 15px;
+}
+
+/* Estilização rápida do verso do card do GitHub */
+.github-card .card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Se você quiser que o card do GitHub tenha uma cor diferente na frente */
+.github-card .card-front {
+    background-color: #24292e !important;
+}
 /* =========================
    PROJETOS
 ========================= */

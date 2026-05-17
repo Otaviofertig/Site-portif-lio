@@ -1,7 +1,6 @@
 /* =========================
    PALETA OFICIAL DO SITE
 ========================= */
-
 :root {
     --bg-primary: #0f172a;
     --bg-secondary: #1e293b;
@@ -13,7 +12,6 @@
 /* =========================
    RESET
 ========================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +28,6 @@ body {
 /* =========================
    HEADER
 ========================= */
-
 header {
     position: relative;
     height: 400px;
@@ -46,7 +43,7 @@ header h1 {
     font-weight: 600;
 }
 
-hearder p {
+header p {
     text-align: center;
 }
 
@@ -68,18 +65,14 @@ footer::after {
 /* =========================
    NAVBAR
 ========================= */
-
 .navbar {
    position: sticky;
    top: 0;
    z-index: 1000;
-
    display: flex;
    justify-content: center;
-   gap: 60px; /* mais espaçamento */
-
-   padding: 25px 30px; /* navbar mais alta */
-
+   gap: 60px;
+   padding: 25px 30px;
    background: rgba(15, 23, 42, 0.95);
    backdrop-filter: blur(10px);
    border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -89,11 +82,9 @@ footer::after {
    position: relative;
    color: var(--text-primary);
    text-decoration: none;
-
-   font-size: 18px; /* fonte maior */
-   font-weight: 600; /* mais destaque */
+   font-size: 18px;
+   font-weight: 600;
    letter-spacing: 1px;
-
    transition: 0.3s;
 }
 
@@ -119,7 +110,6 @@ footer::after {
 /* =========================
    SEÇÕES PADRÃO
 ========================= */
-
 section {
    max-width: 1100px;
    margin: 80px auto;
@@ -139,7 +129,6 @@ section h2 {
 /* =========================
    SOBRE
 ========================= */
-
 .sobre {
    display: flex;
    align-items: center;
@@ -166,7 +155,6 @@ section h2 {
 /* =========================
    HABILIDADES
 ========================= */
-
 .habilidades p {
     text-align: center;
 }
@@ -235,116 +223,94 @@ section h2 {
     font-style: normal;
 }
 
-/* Garante que o fundo e o estilo sejam idênticos aos outros cards */
 .card.github .card-front, 
-.card.soft-skill .card-front {
-    /* O navegador vai herdar o background que você já definiu para a classe .card-front */
+.card.soft .card-front {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-/* Ajuste de tamanho para os ícones novos (Lâmpada e Tarefas) */
-.card-front .fas {
-    font-size: 4rem; /* Ajuste para bater com o tamanho dos ícones Devicon */
+.card-front .fas, .card-front .fab {
+    font-size: 4rem;
     margin-bottom: 15px;
 }
 
-/* Opcional: Se quiser que o ícone do GitHub fique preto como a logo original */
 .devicon-github-original.colored {
     color: #24292e;
 }
+
 /* =========================
    PROJETOS
 ========================= */
-
 .projects-grid {
     display: grid;
-    /* Usa o repeat(auto-fit) que você anotou nos estudos para ser responsivo */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .project-card {
-    border: 1px solid #ddd;
-    padding: 15px; /* Box Model: Padding */
-    border-radius: 8px;
-    transition: transform 0.3s;
+    background: var(--bg-primary);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
-    transform: translateY(-5px); /* Efeito visual moderno */
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
 }
 
-/* =========================
-   ESTILOS DA CALCULADORA
-========================= */
-
-.calc-box {
-    background: var(--bg-secondary);
-    padding: 15px;
-    border-radius: 10px;
-    margin: 20px 0;
-    border: 1px solid var(--accent);
-}
-
-#calc-display {
+.project-img {
     width: 100%;
-    height: 50px;
-    background: var(--bg-primary);
-    border: none;
-    border-radius: 5px;
-    color: var(--text-primary);
-    text-align: right;
-    padding: 10px;
-    font-size: 20px;
-    margin-bottom: 10px;
-    outline: none;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid var(--accent);
 }
 
-.calc-buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+.project-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
-.calc-buttons button {
+.project-info h3 {
+    color: var(--accent);
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.project-info p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #cbd5e1;
+}
+
+.btn-projeto {
+    margin-top: auto;
+    display: block;
+    text-align: center;
     padding: 12px;
-    border: none;
-    border-radius: 5px;
-    background: var(--bg-card);
-    color: var(--text-primary);
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.2s;
+    background-color: var(--accent);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s;
 }
 
-.calc-buttons button:hover {
-    background: var(--accent);
-}
-
-.btn-op, .btn-equal {
-    background: var(--accent) !important;
-}
-
-.btn-clear {
-    background: var(--accent) !important; /* Vermelho para limpar */
-}
-
-.btn-zero {
-    grid-column: span 2;
-}
-
-.btn-equal {
-    grid-row: span 2;
+.btn-projeto:hover {
+    background-color: #2563eb;
 }
 
 /* =========================
    CONTATO
 ========================= */
-
 .contato-container {
     display: flex;
     justify-content: center;
@@ -375,7 +341,6 @@ section h2 {
 /* =========================
    FOOTER
 ========================= */
-
 footer {
     position: relative;
     height: 200px;
@@ -389,7 +354,6 @@ footer {
 /* =========================
    VÍDEO FUNDO
 ========================= */
-
 .bg-video {
     position: absolute;
     top: 0;
@@ -403,11 +367,7 @@ footer {
 /* =========================
    RESPONSIVIDADE (MOBILE E TABLETS)
 ========================= */
-
-/* A regra abaixo aplica-se a ecrãs com largura MÁXIMA de 768px */
 @media (max-width: 768px) {
-    
-    /* 1. HEADER: Reduz a altura e o tamanho do título */
     header {
         height: 300px;
     }
@@ -417,17 +377,15 @@ footer {
         padding: 0 20px;
     }
 
-    /* 2. NAVBAR: Junta mais os links e permite quebrar a linha se necessário */
     .navbar {
         gap: 15px;
         padding: 15px 10px;
-        flex-wrap: wrap; /* Se faltar espaço, os links descem para outra linha */
+        flex-wrap: wrap; 
     }
     .navbar a {
         font-size: 16px;
     }
 
-    /* 3. SEÇÕES: Diminui as margens externas e os espaços internos */
     section {
         margin: 40px 15px; 
         padding: 30px 20px; 
@@ -437,17 +395,15 @@ footer {
         margin-bottom: 25px;
     }
 
-    /* 4. SOBRE MIM: Empilha a foto e o texto verticalmente */
     .sobre {
         flex-direction: column; 
         text-align: center;
         gap: 20px;
     }
     .foto img {
-        width: 200px; /* Foto ligeiramente menor para mobile */
+        width: 200px; 
     }
 
-    /* 5. CONTATO: Reduz o espaço entre os botões */
     .contato-container {
         gap: 20px;
     }
@@ -457,20 +413,11 @@ footer {
     }
 }
 
-/* A regra abaixo aplica-se a ecrãs muito pequenos (ex: celulares antigos) */
 @media (max-width: 480px) {
-    
-    /* Ajustes extras para não apertar demais */
     .navbar {
         gap: 10px;
     }
     .navbar a {
-        font-size: 14px;
-    }
-    
-    /* Reduz um pouco os botões da calculadora */
-    .calc-buttons button {
-        padding: 10px;
         font-size: 14px;
     }
 }

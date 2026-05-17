@@ -5,23 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Otávio Fertig</title>
 
-    <!-- Estilos principais do site -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Biblioteca de ícones das tecnologias -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-    <!-- Biblioteca de ícones (redes sociais e Node.js) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Bibliotecaa de icones -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER / HERO ================= -->
-    <!-- Seção principal com vídeo de fundo e título de apresentação -->
     <header>
         <video autoplay muted loop playsinline class="bg-video">
             <source src="video-header.mp4" type="video/mp4">
@@ -32,9 +24,6 @@
         </div>
     </header>
 
-
-    <!-- ================= NAVBAR ================= -->
-    <!-- Menu de navegação com links internos para as seções do site -->
     <nav class="navbar">
         <a href="#sobre">Sobre</a>
         <a href="#habilidades">Habilidades</a>
@@ -42,13 +31,9 @@
         <a href="#contato">Contato</a>
     </nav>
 
-
     <main>
 
-        <!-- ================= SOBRE MIM ================= -->
-        <!-- Seção de apresentação pessoal com foto e descrição profissional -->
         <section id="sobre" class="sobre">
-
             <div class="foto">
                 <img src="Foto-Otávio.jpeg" alt="Foto de Otávio" loading="lazy">
             </div>
@@ -59,19 +44,15 @@
                     Sou Otávio, tenho 20 anos e atualmente curso Análise e Desenvolvimento de Sistemas no UniSenai.
                     Estou em busca da minha primeira oportunidade na área de tecnologia.
                 </p>
-
                 <br>
-
                 <p>
                     Tenho conhecimentos em desenvolvimento front-end, além de experiência com Java, MySQL e Bootstrap.
                 </p>
             </div>
-
         </section>
 
-        <!-- ================= SOFT-SKILSS ================= -->
-       <section id="soft-skills" class="habilidades"> <h2>Soft Skills</h2>
-
+        <section id="soft-skills" class="habilidades"> 
+            <h2>Soft Skills</h2>
             <div class="cards-container">
 
                 <div class="card soft">
@@ -125,16 +106,9 @@
             </div>
         </section>
 
-
-        <!-- ================= HABILIDADES ================= -->
-        <!-- Seção com cards interativos representando suas tecnologias -->
         <section id="habilidades" class="habilidades">
-
             <h2>Minhas Habilidades</h2>
-
             <div class="cards-container">
-
-                <!-- Cada card possui frente e verso para efeito de rotação (flip) -->
 
                 <div class="card html">
                     <div class="card-inner">
@@ -199,7 +173,7 @@
                 <div class="card node">
                     <div class="card-inner">
                         <div class="card-front">
-                            <i class="fab fa-node-js"></i>
+                            <i class="fab fa-node-js icon" style="color: #8CC84B;"></i>
                             <h3>Node.js</h3>
                         </div>
                         <div class="card-back">
@@ -208,112 +182,82 @@
                     </div>
                 </div>
 
-            <div class="card github">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <i class="devicon-github-original colored icon"></i>
-                        <h3>GitHub</h3>
-                    </div>
-                    <div class="card-back">
-                        <p>Versionamento de código e colaboração em projetos open-source.</p>
+                <div class="card github">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="devicon-github-original colored icon"></i>
+                            <h3>GitHub</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Versionamento de código e colaboração em projetos open-source.</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
+        <section id="projetos" class="projetos">
+            <h2>Meus Projetos</h2>
 
-        <!-- ================= PROJETOS ================= -->
-        <!-- Seção para apresentar projetos desenvolvidos e tecnologias utilizadas -->
-       <section id="projetos" class="projetos">
-    <h2>Meus Projetos</h2>
+            <div class="projects-grid">
 
-    <div class="projeto-card">
-        <h3>Calculadora Web</h3>
-        <p>Projeto funcional integrado utilizando lógica de manipulação do DOM.</p>
-        
-        <div class="calc-box">
-            <input type="text" id="calc-display" readonly placeholder="0">
-            <div class="calc-buttons">
-                <button onclick="clearDisplay()" class="btn-clear">Clear</button>
-                <button onclick="appendToDisplay('/')">/</button>
-                <button onclick="appendToDisplay('*')">×</button>
-                <button onclick="deleteLast()">⌫</button>
+                <div class="project-card">
+                    <img src="imagem-projeto-1.jpg" alt="Imagem da interface do Projeto 1" class="project-img">
+                    <div class="project-info">
+                        <h3>Nome do Projeto</h3>
+                        <p>Uma breve descrição sobre o que este projeto faz. Aqui podes explicar qual problema ele resolve e quais foram os teus principais desafios.</p>
+                        <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+                        <a href="#" target="_blank" class="btn-projeto">Ver Projeto</a>
+                    </div>
+                </div>
 
-                <button onclick="appendToDisplay('7')">7</button>
-                <button onclick="appendToDisplay('8')">8</button>
-                <button onclick="appendToDisplay('9')">9</button>
-                <button onclick="appendToDisplay('-')" class="btn-op">-</button>
+                <div class="project-card">
+                    <img src="imagem-projeto-2.jpg" alt="Imagem da interface do Projeto 2" class="project-img">
+                    <div class="project-info">
+                        <h3>Sistema de Gestão</h3>
+                        <p>Desenvolvimento de um sistema de gestão de stock com interface amigável e ligação a uma base de dados relacional.</p>
+                        <p><strong>Tecnologias:</strong> Java, MySQL</p>
+                        <a href="#" target="_blank" class="btn-projeto">Ver Código</a>
+                    </div>
+                </div>
 
-                <button onclick="appendToDisplay('4')">4</button>
-                <button onclick="appendToDisplay('5')">5</button>
-                <button onclick="appendToDisplay('6')">6</button>
-                <button onclick="appendToDisplay('+')" class="btn-op">+</button>
-
-                <button onclick="appendToDisplay('1')">1</button>
-                <button onclick="appendToDisplay('2')">2</button>
-                <button onclick="appendToDisplay('3')">3</button>
-                <button onclick="calculate()" class="btn-equal">=</button>
-
-                <button onclick="appendToDisplay('0')" class="btn-zero">0</button>
-                <button onclick="appendToDisplay('.')">.</button>
             </div>
-        </div>
+        </section>
 
-        <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
-    </div>
-
-    </section>
-
-
-        <!-- ================= CONTATO ================= -->
-        <!-- Seção com formas de contato e redes profissionais -->
         <section id="contato" class="contato">
-
             <h2>Contato</h2>
-
             <div class="contato-container">
 
-                <a href="https://www.linkedin.com/in/ot%C3%A1vio-fertig-677b25331/" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   class="contato-card linkedin">
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/ot%C3%A1vio-fertig-677b25331/" target="_blank" rel="noopener noreferrer" class="contato-card linkedin">
+                    <i class="fab fa-linkedin icon"></i>
                     <span>LinkedIn</span>
                 </a>
 
                 <a href="mailto:otavio.lesss@gmail.com" class="contato-card email">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope icon"></i>
                     <span>Email</span>
                 </a>
 
-                <a href="https://github.com/Otaviofertig" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   class="contato-card github">
-                    <i class="fab fa-github"></i>
+                <a href="https://github.com/Otaviofertig" target="_blank" rel="noopener noreferrer" class="contato-card github">
+                    <i class="fab fa-github icon"></i>
                     <span>GitHub</span>
                 </a>
 
             </div>
-
         </section>
 
     </main>
 
-
-    <!-- ================= FOOTER ================= -->
-    <!-- Rodapé com vídeo de fundo e direitos autorais -->
     <footer>
         <video autoplay muted loop playsinline class="bg-video">
             <source src="video-footer.mp4" type="video/mp4">
         </video>
-
         <div class="footer-content">
             <p>&copy; Todos os direitos reservados</p>
         </div>
     </footer>
 
-    <!-- Script principal do site -->
     <script src="script.js"></script>
 
 </body>

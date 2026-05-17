@@ -399,3 +399,78 @@ footer {
     object-fit: cover;
     z-index: -1;
 }
+
+/* =========================
+   RESPONSIVIDADE (MOBILE E TABLETS)
+========================= */
+
+/* A regra abaixo aplica-se a ecrãs com largura MÁXIMA de 768px */
+@media (max-width: 768px) {
+    
+    /* 1. HEADER: Reduz a altura e o tamanho do título */
+    header {
+        height: 300px;
+    }
+    header h1 {
+        font-size: 28px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    /* 2. NAVBAR: Junta mais os links e permite quebrar a linha se necessário */
+    .navbar {
+        gap: 15px;
+        padding: 15px 10px;
+        flex-wrap: wrap; /* Se faltar espaço, os links descem para outra linha */
+    }
+    .navbar a {
+        font-size: 16px;
+    }
+
+    /* 3. SEÇÕES: Diminui as margens externas e os espaços internos */
+    section {
+        margin: 40px 15px; 
+        padding: 30px 20px; 
+    }
+    section h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    /* 4. SOBRE MIM: Empilha a foto e o texto verticalmente */
+    .sobre {
+        flex-direction: column; 
+        text-align: center;
+        gap: 20px;
+    }
+    .foto img {
+        width: 200px; /* Foto ligeiramente menor para mobile */
+    }
+
+    /* 5. CONTATO: Reduz o espaço entre os botões */
+    .contato-container {
+        gap: 20px;
+    }
+    .contato-card {
+        width: 140px;
+        padding: 20px;
+    }
+}
+
+/* A regra abaixo aplica-se a ecrãs muito pequenos (ex: celulares antigos) */
+@media (max-width: 480px) {
+    
+    /* Ajustes extras para não apertar demais */
+    .navbar {
+        gap: 10px;
+    }
+    .navbar a {
+        font-size: 14px;
+    }
+    
+    /* Reduz um pouco os botões da calculadora */
+    .calc-buttons button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
